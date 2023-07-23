@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Diablo IV Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico?">
+  <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png">
+  <!-- <link rel="mask-icon" href="img/pinned-tab-icon.svg" color="#000000"> -->
+  <meta name="description" content="Checklist for Diablo IV">
+  <meta name="author" content="Raymond Tang">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P56E37GTFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P56E37GTFZ');
+</script>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#tabSideQuests" data-toggle="tab" data-target="#tabSideQuests,#btnHideCompleted">Side Quests</a></li>
+          <li><a href="#tabSideDungeons" data-toggle="tab" data-target="#tabSideDungeons,#btnHideCompleted">Side Dungeons</a></li>
+          <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+          <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
+        </ul>
+        <!-- /.nav.navbar-nav -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Diablo IV Checklist</h1>
+        <p class="lead">Contribute to the guide at the <a href="https://github.com/raymondhytang/diablo-4-checklist">GitHub Page</a></p>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <!-- Hide Completed Toggle -->
+      <div class="tab-pane active in" id="btnHideCompleted">
+        <div class="btn-group" role="group" data-toggle="buttons">
+          <label class="btn btn-default">
+            <input type="checkbox" id="toggleHideCompleted">
+            <span class="glyphicon glyphicon-eye-close"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            Hide Completed
+            <a class="btn btn-default btn-sm fadingbutton togglehide" onclick="$('#toggleHideCompleted').click();">
+              <span class="glyphicon glyphicon-eye-close"></span>
+              <span class="glyphicon glyphicon-eye-open"></span>
+              Hide Completed
+            </a>
+          </label>
+        </div>
+      </div>
+      <!-- SIDE QUESTS START -->
+      <div class="tab-pane active" id="tabSideQuests">
+        <!-- Toolbar -->
+        <h2>Filter Checklist</h2>
+        <div class="btn-group">
+          <div class="btn-group btn-group-vertical">
+            <div class="btn-group">
+              <div class="btn-group-vertical" data-toggle="buttons">
+                <label class="btn btn-default dropdown-toggle">
+                  <input type="checkbox" data-category-toggle />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Quests
+                </label>
+              </div>
+            </div>
+            <div class="btn-group">
+              <div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_side_quest" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Side Quests
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Side Quests <span id="side_quests_overall_total"></span></h2>
+        <ul class="table_of_contents">
+          <li><a href="#Fractured_Peaks">Fractured Peaks</a> <span id="side_quests_nav_totals_1"></li>
+          <li><a href="#Scosglen">Scosglen</a> <span id="side_quests_nav_totals_2"></li>
+          <li><a href="#Dry_Steppes">Dry Steppes</a> <span id="side_quests_nav_totals_3"></li>
+          <li><a href="#Kehjistan">Kehjistan</a> <span id="side_quests_nav_totals_4"></li>
+          <li><a href="#Hawezar">Hawezar</a> <span id="side_quests_nav_totals_5"></li>
+        </ul>
+
+        <div class="form-group">
+          <input type="search" id="side_quests_search" class="form-control" placeholder="Start typing to filter results..." />
+        </div>
+
+        <div id="side_quests_list">
+
+          <h3 id="Fractured_Peaks"><a href="#Fractured_Peaks_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-fractured-peaks-all-side-quest-locations/">Fractured Peaks </a> <span id="side_quests_totals_1"></span></h3>
+          <ul id="Fractured_Peaks_col" class="collapse in">
+            <h4>Desolate Highlands</h4>
+            <li data-id="side_quests_1_1" class="f_side_quest"><b>Menestad Coffers</b><br>Inside Kyovashad, available when first arriving. Head to the marked area in Sarkova Pass and search for the Monk.</li>
+            <li data-id="side_quests_1_2" class="f_side_quest"><b>Raising Spirits</b><br>Inside Kyovashad, available when first arriving. Go to the soldiers and use the Cheer gesture.</li>
+            <li data-id="side_quests_1_3" class="f_side_quest"><b>The Sealed Door</b><br>Inside Kyovashad, available after progressing Act I. Head to the marked area in Frigid Expanse and kill the Death Priest.</li>
+            <li data-id="side_quests_1_4" class="f_side_quest"><b>The Woodsman of Nevesk</b><br>Inside Nevesk, available after first visiting Kyovashad. Head to Boulder Ridge, search the marked area for the axe and kill The Woodsman.</li>
+            <li data-id="side_quests_1_5" class="f_side_quest"><b>Malady of the Soul</b><br>Inside Kyovashad, available after progressing Act I. Enter the cellar and kill Xul’Goth.</li>
+            <li data-id="side_quests_1_6" class="f_side_quest"><b>Depths of Despair</b><br>Inside Kyovashad, available after completing Malady of the Soul and leaving the city for a bit. Search the marked area for Vasek and enter the Kyovashad Sewers, then head to the end and kill Demotath.</li>
+            <li data-id="side_quests_1_7" class="f_side_quest"><b>Faith in Blood</b><br>Inside Kyovashad, available after completing Depths of Despair and leaving the city for a bit. Head to Margrave to collect the chalice and fill it by killing enemies in the marked area. Return to Margrave and then the cellar in Kyovashad to kill Demotath again.</li>
+            <li data-id="side_quests_1_8" class="f_side_quest"><b>Sight to Madness</b><br>Inside Kyovashad, available after progressing Act I. Conquer Nostrava Stronghold, then enter Cultist Refuge dungeon and kill Theya.</li>
+            <h4>Dobrev Taiga</h4>
+            <li data-id="side_quests_1_9" class="f_side_quest"><b>A Cold Faith</b><br>In the Southeast Foothills, available when first arriving. Follow the quest marker to Margrave and speak to the man.</li>
+            <li data-id="side_quests_1_10" class="f_side_quest"><b>The Cleansing Flame</b><br>Inside Margrave, available when first arriving. Head to The Cleansing Flame at the marked area and activate it, then kill all the monsters.</li>
+            <li data-id="side_quests_1_11" class="f_side_quest"><b>Bound by Blood</b><br>Inside Margrave, available when first arriving. Follow the quest markers into Cutthroat’s Escape and kill Outlaw Sharpshooter at the end.</li>
+            <li data-id="side_quests_1_12" class="f_side_quest"><b>Legacies of Light’s Watch</b><br>Inside Margrave, available when first arriving. Enter Light’s Watch dungeon and acquire the three journals.</li>
+            <li data-id="side_quests_1_13" class="f_side_quest"><b>Better Days</b><br>Pick up Faded Old Painting, which can drop from searchable corpses east of Margrave. Bring it to Zalan Coste. May require completing Legacies of Light’s Watch.</li>
+            <li data-id="side_quests_1_14" class="f_side_quest"><b>Unwritten End</b><br>Pick up Merchant’s Ledger, which can drop from Bandit enemies east of Margrave. Bring it to Zalan Coste. May require completing Legacies of Light’s Watch.</li>
+            <h4>Gale Valley</h4>
+            <li data-id="side_quests_1_15" class="f_side_quest"><b>Ravenous Dead</b><br>Inside Yelesna, available when first arriving. Kill Ghouls north of Yelesna and collect 15 Ghoul Hearts.</li>
+            <li data-id="side_quests_1_16" class="f_side_quest"><b>Traveler’s Prayer</b><br>Inside Yelesna, available when first arriving. Go to the shrine and use the Thanks gesture.</li>
+            <li data-id="side_quests_1_17" class="f_side_quest"><b>Unyielding Flesh</b><br>Inside Yelesna, available when first arriving. Go to Gnarled Timbers and approach the chained person, then follow the woman and kill Yulia.</li>
+            <li data-id="side_quests_1_18" class="f_side_quest"><b>Icebound Geode</b><br>Pick up Icebound Geode, which can drop from Ore Veins in Gale Valley after completing the Campaign. Bring it to Kratia.</li>
+            <li data-id="side_quests_1_19" class="f_side_quest"><b>Righteous Idol</b><br>Inside Yelesna, available after completing Better Days and Unwritten End for Zalan Coste, and completing the Campaign. Purchase the Carved Wooden Knight from the merchant and take it to Zalan.</li>
+            <h4>Sarkova Pass</h4>
+            <li data-id="side_quests_1_20" class="f_side_quest"><b>Gold Well Spent</b><br>Inside Menestad, available when first arriving. Head to the quest marker and kill Luskas.</li>
+            <li data-id="side_quests_1_21" class="f_side_quest"><b>Chain of Possession</b><br>Inside Menestad, available after completing The Woodsman of Nevek. Enter the cellar and kill Magdalena.</li>
+            <li data-id="side_quests_1_22" class="f_side_quest"><b>Legacy Unmade</b><br>Automatically started after finishing Chain of Possession. Head to the quest marker in Crags of Ill Wind and kill The Woodsman again.</li>
+            <li data-id="side_quests_1_23" class="f_side_quest"><b>Forgive Me</b><br>Inside Kor Dragan Barracks dungeon, pick up Bloodied Note that drops from the elite enemy Julek. Give the note to Roza in Menestad.</li>
+            <h4>The Pallid Glade</h4>
+            <li data-id="side_quests_1_24" class="f_side_quest"><b>Hungering Bone Cache</b><br>Pick up Hungering Bone Cache that drops from searchable corpses in Frostbite Trails. Head to the marked area and kill werewolves to harvest death anima.</li>
+            <li data-id="side_quests_1_25" class="f_side_quest"><b>Frostbloom</b><br>Pick up Frostbloom, which can be found randomly when harvesting herbs anywhere in The Pallid Glade. Give it to Veroka in Kyovashad.</li>
+            <li data-id="side_quests_1_26" class="f_side_quest"><b>Cries of Innocence</b><br>In Olyam Tundra, available when first arriving. Enter Black Asylum dungeon and kill Corik Trost.</li>
+            <li data-id="side_quests_1_27" class="f_side_quest"><b>The Dread Martyr</b><br>In Olyam Tundra, available when first arriving. Enter Hallowed Ossuary dungeon and kill Lord Avitus.</li>
+            <li data-id="side_quests_1_28" class="f_side_quest"><b>Secret of the Spring</b><br>In Kylsik Plateau, available when first arriving. Head to the quest marker at Trough of Orobas and use the Wait gesture (will need to customise and assign it).</li>
+            <li data-id="side_quests_1_29" class="f_side_quest"><b>Exorcist’s Cache</b><br>Pick up Sealed Exorcist’s Cache that drops from Undead enemies within The Deep White. Kill undead in the marked area to collect spirit anima.</li>
+            <li data-id="side_quests_1_30" class="f_side_quest"><b>Gory Display</b><br>Pick up Warrior’s Chain that drops from a Khazra ambush in the east of Olyam Tundra, outside the entrance to Malnok. Take it to Bear Tribe Refuge.</li>
+            <h4>Seat of the Heavens</h4>
+            <li data-id="side_quests_1_31" class="f_side_quest"><b>Shattered Tribute</b><br>Inside Bear Tribe Refuge, available when first arriving. Enter Hoarfrost Demise dungeon and kill khazra for 25 Ice Clan Bones.</li>
+            <li data-id="side_quests_1_32" class="f_side_quest"><b>Hammer of the Champion</b><br>Inside Bear Tribe Refuge, available when first arriving. Conquer Malnok Stronghold, then enter Rimescar Cavern dungeon and find the Grizzly’s Maul on an impaled corpse.</li>
+            <li data-id="side_quests_1_33" class="f_side_quest"><b>The Beast’s Challenge</b><br>Inside Bear Tribe Refuge, available when first arriving. Head to the marked area and kill Kauller the Collector, then return.</li>
+            <li data-id="side_quests_1_34" class="f_side_quest"><b>Call of the Ancients</b><br>Inside Bear Tribe Refuge, available after completing the above 3 Side Quests. Enter the Hallowed Glacier dungeon and kill Cyhrach the First Born at the end.</li>
+            <h4>Kor Valar</h4>
+            <li data-id="side_quests_1_35" class="f_side_quest"><b>Blood Sermon</b><br>Inside Kor Valar after completing Pilgrimage in Act I. Enter Sanguine Chapel dungeon and kill the Blood Bishop at the end.</li>
+          </ul>
+
+          <h3 id="Scosglen"><a href="#Scosglen_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-scosglen-all-side-quest-locations/">Scosglen </a> <span id="side_quests_totals_2"></span></h3>
+          <ul id="Scosglen_col" class="collapse in">
+            <h4>Westering Lowlands</h4>
+            <li data-id="side_quests_2_1" class="f_side_quest"><b>Chronicling the Old Ways</b><br>Outside Eldhaime Keep. Head to the marked area and collect 3 Runic Tablets by killing Beast enemies.</li>
+            <li data-id="side_quests_2_2" class="f_side_quest"><b>Braega’s Chronicles</b><br>Pick up A History of Scosglen, which can be dropped by Khazra enemies in Westering Lowlands. Return the book to Wilfred.</li>
+            <h4>Firebreak Manor</h4>
+            <li data-id="side_quests_2_3" class="f_side_quest"><b>A Plea For Aid</b><br>In Firebreak Manor, available after progressing Act II. Head to Cerrigar and speak to Corman.</li>
+            <h4>The Emerald Chase</h4>
+            <li data-id="side_quests_2_4" class="f_side_quest"><b>What Ails Thee</b><br>Inside Cerrigar, available when first arriving. Head to Blycroft and speak to Phelan.</li>
+            <li data-id="side_quests_2_5" class="f_side_quest"><b>The Fledgling Merchant</b><br>Inside Cerrigar, available after completing Act II. Kill Tusked Chargers in the marked areas for 10 Charger Tusks.</li>
+            <li data-id="side_quests_2_6" class="f_side_quest"><b>Blood of Brigands</b><br>Inside Cerrigar, available after completing Act II. Kill 50 Bandit enemies in the marked area.</li>
+            <li data-id="side_quests_2_7" class="f_side_quest"><b>Daughter of the Oak</b><br>Inside Cerrigar, available after completing Act II. Conquer Tur Dulra, then enter Underroot dungeon. Search for roots to cut, then return.</li>
+            <h4>Wailing Hills</h4>
+            <li data-id="side_quests_2_8" class="f_side_quest"><b>The Starving Strand</b><br>Inside Braestaig, available when first arriving. Head to the Strandflats and speak to Tadhg.</li>
+            <li data-id="side_quests_2_9" class="f_side_quest"><b>Stolen Artifice</b><br>Inside Braestaig, available when first arriving. Head to the marked area and kill Darcel.</li>
+            <li data-id="side_quests_2_10" class="f_side_quest"><b>Votive Passing</b><br>Inside Braestaig, available after progressing Act II. Head to the marked area and search for the 3 resting sites, then deliver the item.</li>
+            <li data-id="side_quests_2_11" class="f_side_quest"><b>Ravenous Predator’s Offering</b><br>Pick up Ravenous Predator’s Offering, which is dropped by searchable corpses in Wailing Hills. Harvest spirit enemies from Beast enemies in the marked area.</li>
+            <h4>Northshore</h4>
+            <li data-id="side_quests_2_12" class="f_side_quest"><b>A Briny Fate</b><br>Inside Marowen, available when first arriving. Head to the marked area and speak to the Wounded Soldier, then head north and open a Sailor’s Chest for a letter. Return to Fergus.</li>
+            <li data-id="side_quests_2_13" class="f_side_quest"><b>Stemming the Tide</b><br>Inside Marowen, available when first arriving. Head to the marked area and kill 100 Drowned enemies.</li>
+            <li data-id="side_quests_2_14" class="f_side_quest"><b>Whispers from Below</b><br>In The Gaunt Eyrrs, available when first arriving. Head to the marked area to find Cecil.</li>
+            <li data-id="side_quests_2_15" class="f_side_quest"><b>A Sodden Pact</b><br>Started automatically after completing Whispers from Below. Head to the quest marker and find 5 Sodden Growth around the area, then head to the beach and speak to Roina.</li>
+            <li data-id="side_quests_2_16" class="f_side_quest"><b>Untangling Truths</b><br>Started automatically after completing A Sodden Pact. Head to the quest marker, then place offerings at the 3 Derelict Shrines.</li>
+            <li data-id="side_quests_2_17" class="f_side_quest"><b>Threads of Envy</b><br>Started automatically after completing Untangling Truths. Head to the quest marker and enter Mithering Descent. Head to the end and defeat the Sodden Effigy, then return to Marowen.</li>
+            <li data-id="side_quests_2_18" class="f_side_quest"><b>Warded Sailor’s Vessel</b><br>Pick up Warded Sailor’s Vessel, which drops from searchable corpses in The Cursed Scarps. Head to the marked area and harvest anima from Drowned enemies.</li>
+            <h4>Deep Forest</h4>
+            <li data-id="side_quests_2_19" class="f_side_quest"><b>A Deepening Shadow</b><br>In Shob’ha’s Perch, available when first arriving. Head to the marked area and kill corrupted deer, then examine 3 spots. Continue and kill Barret, then return.</li>
+            <li data-id="side_quests_2_20" class="f_side_quest"><b>The Old Ways</b><br>Started automatically after completing A Deepening Shadow. Conquer Tur Dulra and speak to Scholar Yuein, Enter Lair of the Despoiler and kill the 3 Wildwood. Activate the 3 Sacred Stones, then return to Scholar Yuein and Shob’ha.</li>
+            <li data-id="side_quests_2_21" class="f_side_quest"><b>A Sliver of Light</b><br>Started automatically after completing The Old Ways. Speak to Mochrann and lead him to the 3 corrupted fonts, killing the enemies.</li>
+            <li data-id="side_quests_2_22" class="f_side_quest"><b>Tending Nature</b><br>Inside Tur Dulra after conquering the stronghold. Head to the marked areas and acquire the three items by scavenging/killing the enemies before returning. Follow the quest markers and kill the Poachers.</li>
+            <li data-id="side_quests_2_23" class="f_side_quest"><b>The Diviner</b><br>Inside Tur Dulra after conquering the stronghold. Search Piles of Stones around Tur Dulra for a Runestone. Head to the 3 quest markers to activate the 3 Runestones.</li>
+            <li data-id="side_quests_2_24" class="f_side_quest"><b>Left in Ashes</b><br>Inside Tur Dulra after completing The Diviner. Head to the marked area and kill Cursed Eadaoin’s Spirit.</li>
+            <li data-id="side_quests_2_25" class="f_side_quest"><b>The Traveling Scholar</b><br>In Southern Briars after conquering Tur Dulra stronghold. Escort Aria to the marked areas, searching for druid items.</li>
+            <h4>The Downs</h4>
+            <li data-id="side_quests_2_26" class="f_side_quest"><b>Fields of Ruin</b><br>Inside Blycroft, available when first arriving. Go to the marked areas and place the wardstones, then head to The Unhallowed Pit and kill Blackhorn.</li>
+            <li data-id="side_quests_2_27" class="f_side_quest"><b>Feral Moon</b><br>In The Harrowfields, available after completing What Ails Thee. Enter Sarat’s Lair dungeon and find the Light-Blessed Amulet on a searchable corpse.</li>
+            <li data-id="side_quests_2_28" class="f_side_quest"><b>Ever Faithful</b><br>In Wraithstead, available when first arriving. Head to the marked area and enter the Abandoned Smuggler’s Den, then kill Faolan.</li>
+            <li data-id="side_quests_2_29" class="f_side_quest"><b>First Among Wolves</b><br>In Wraithstead, available after completing Fields of Ruin. Head to the marked area and search for for Una’s Journals, then kill all werewolves.</li>
+            <li data-id="side_quests_2_30" class="f_side_quest"><b>The Snare</b><br>Automatically started after completing First Among Wolves. Head to the marked area to find a druidic totem, then kill waves of enemies at two locations to complete the blood ritual.</li>
+            <li data-id="side_quests_2_31" class="f_side_quest"><b>With Fangs Bared</b><br>Automatically started after completing The Snare. Enter the Abandoned Barrow and kill Una.</li>
+            <h4>Strand</h4>
+            <li data-id="side_quests_2_32" class="f_side_quest"><b>The Seer</b><br>In The Cinder Woods, available when first arriving. Head to the marked area and kill Khazra enemies to collect 5 Goatman Entrails, then speak to Baewyn.</li>
+            <li data-id="side_quests_2_33" class="f_side_quest"><b>Smoke Signals</b><br>Automatically started after completing The Seer. Head to Kealer Farm and then return to Baewyn.</li>
+            <li data-id="side_quests_2_34" class="f_side_quest"><b>Reclamation</b><br>Automatically started after completing Smoke Signals. Enter Domhainne Tunnels and search for the Cathedral Cross 3 times.</li>
+            <li data-id="side_quests_2_35" class="f_side_quest"><b>Message in a Bottle</b><br>Pick up Washed-Ashore Bottle, found on the shore in Razor Shoals. Speak to villagers in Corbach to find Padrig, then speak to him.</li>
+            <h4>The Shrouded Moors</h4>
+            <li data-id="side_quests_2_36" class="f_side_quest"><b>An Acquired Taste</b><br>Inside Tirmair, available when first arriving. Kill Thorn Beasts in the marked area for 12 Thorn Beast Meat.</li>
+            <li data-id="side_quests_2_37" class="f_side_quest"><b>Of Pests and Pestilence</b><br>Inside Tirmair, available when first arriving. Kill 75 Stinging Swarms within the Shrouded Moors.</li>
+            <li data-id="side_quests_2_38" class="f_side_quest"><b>Settling the Tab</b><br>Inside Tirmair, available when first arriving. Head to Fat Goose Inn and speak to the Innkeeper.</li>
+            <li data-id="side_quests_2_39" class="f_side_quest"><b>The Wrong Hands</b><br>Pick up Broken Carving, which can be found by searching objects throughout The Shrouded Moors or Highland Wilds after completing With Fangs Bared. Speak to Artair in Wraithstead.</li>
+            <li data-id="side_quests_2_40" class="f_side_quest"><b>A Different Beast</b><br>Pick up Broken Totem, which can be found on searchable corpses throughout The Shrouded Moors or Highland Wilds after completing The Wrong Hands. Speak to Artair in Wraithstead.</li>
+            <li data-id="side_quests_2_41" class="f_side_quest"><b>The Broken Bear</b><br>Pick up Broken Bear Totem, which can be dropped by Grizzly Bears throughout The Shrouded Moors or Highland Wilds after completing A Different Beast. Speak to Artair in Wraithstead.</li>
+            <h4>Highland Wilds</h4>
+            <li data-id="side_quests_2_42" class="f_side_quest"><b>Remembering the Goose</b><br>Inside Under the Fat Goose Inn, available when first arriving. Head to the marked area and find Nairne, then place Tavish’s daggers at the 3 quest markers.</li>
+            <li data-id="side_quests_2_43" class="f_side_quest"><b>Wagered Honor</b><br>Inside Under the Fat Goose Inn, available when first arriving. Head to the marked area and kill Gormothos.</li>
+            <li data-id="side_quests_2_44" class="f_side_quest"><b>Claws at the Throat</b><br>In The Great Northern Plains, available after completing Remembering the Goose. Head to the Inn, then to the marked area to find the Slain Merchant.</li>
+            <li data-id="side_quests_2_45" class="f_side_quest"><b>Pyre of Ash</b><br>Automatically started after completing Claws at the Throat. Head to the marked area and enter the Embered Recess, then kill the enemies.</li>
+            <li data-id="side_quests_2_46" class="f_side_quest"><b>Chasing Embers</b><br>Automatically started after completing Pyre of Ash. Head to the Scar and find the pyre victim on a cliff.</li>
+            <li data-id="side_quests_2_47" class="f_side_quest"><b>The Bear of Blackweald</b><br>Automatically started after completing Chasing Embers. Head to the quest marker and enter Seared Hollow, then kill Stana.</li>
+          </ul>
+
+          <h3 id="Dry_Steppes"><a href="#Dry_Steppes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-dry-steppes-all-side-quest-locations/">Dry Steppes </a> <span id="side_quests_totals_3"></span></h3>
+          <ul id="Dry_Steppes_col" class="collapse in">
+            <h4>Kotama Grasslands</h4>
+            <li data-id="side_quests_3_1" class="f_side_quest"><b>Dust Daisy</b><br>Pick up Dust Daisy, which can drop when searching herbs in Kotama Grasslands. Head to Ked Bardu and speak to Jaral.</li>
+            <li data-id="side_quests_3_2" class="f_side_quest"><b>Corroding Mettle</b><br>Inside Ked Bardu, available when first arriving. Head to Jirandai and speak with Ordun, thne go the quest marker. Search the area for Khada, then return to Ordun.</li>
+            <li data-id="side_quests_3_3" class="f_side_quest"><b>Thieves’ Famine</b><br>Inside Ked Bardu, available when first arriving. Kill Bandit enemies in the marked area to collect 20 Stolen Supplies.</li>
+            <li data-id="side_quests_3_4" class="f_side_quest"><b>Crucible of Worth</b><br>Inside Ked Bardu, available when first arriving. Head to the marked area and collect the axe on the cliff, then return. Head to the marked areas and kill Oppressors for a horn and search Glittering Ore Veins for silver quartz.</li>
+            <li data-id="side_quests_3_5" class="f_side_quest"><b>Malign Devotion</b><br>Inside Ked Bardu, available when first arriving. Head to Alzuuda and speak to Lakren. Go to the marked area and enter Lost Monument Crypt, then kill Lakren.</li>
+            <li data-id="side_quests_3_6" class="f_side_quest"><b>Hunger for a New Life</b><br>Inside Farobru, available after progressing Act III. Enter Zolaya’s Hideout and grab the herbs, then return.</li>
+            <h4>Tusmaa Rift</h4>
+            <li data-id="side_quests_3_7" class="f_side_quest"><b>Reject the Mother</b><br>In Abahru Canyon, after progressing Act III. Head to the marked area and use the No gesture.</li>
+            <li data-id="side_quests_3_8" class="f_side_quest"><b>Strange Ore Sample</b><br>Pick up Strange Ore Sample, which can drop when searching Ore Veins in Tusmaa Rift. Bring it to Gerti.</li>
+            <li data-id="side_quests_3_9" class="f_side_quest"><b> No Deed Unpunished</b><br>In Tusmaa Rift, available after progressing Act III. Head to the marked area and search for and kill the Caged Cultist.</li>
+            <h4>Dindai Flats</h4>
+            <li data-id="side_quests_3_10" class="f_side_quest"><b>Exhuming Faith</b><br>In Orbei Monastery, available when first arriving. Head to the marked area and search for the trail markers, then kill Izzoth the Deceiver.</li>
+            <li data-id="side_quests_3_11" class="f_side_quest"><b>Firsthand Knowledge</b><br>In The Forlorn Tread, available when first arriving. Head to the marked areas until you arrive at the Family Cellar. Enter and defeat Nurbolat.</li>
+            <h4>The Scarred Coast</h4>
+            <li data-id="side_quests_3_12" class="f_side_quest"><b>Sealed Penitent’s Cache</b><br>Pick up Sealed Penitent’s Cache, which is dropped by enemies in Ragged Shore. Kill Undead in the marked area to harvest spirit energy.</li>
+            <li data-id="side_quests_3_13" class="f_side_quest"><b>The Unlucky Ones</b><br>In Tamuur Hinterland, available when first arriving. Kill 50 zombies within The Scarred Coast.</li>
+            <h4>Khargai Crags</h4>
+            <li data-id="side_quests_3_14" class="f_side_quest"><b>Scorched Debts</b><br>In Bastard’s Pass, available when first arriving. Pick up the ledger and travel to the marked area to kill Andreea. Head to Ked Bardu and speak to the three people, then go to the marked area in Crown of Fiends and search for Lyruk. Head to the summoning ritual and kill Orrostus.</li>
+            <li data-id="side_quests_3_15" class="f_side_quest"><b>Sealed Oxen Tribe Cache</b><br>Pick up Sealed Oxen Tribe Cache, dropped by enemies in The Crown of Fiends. Kill Vile Ones in the marked area to harvest demon fury.</li>
+            <h4>The Onyx Watchtower</h4>
+            <li data-id="side_quests_3_16" class="f_side_quest"><b>Kith and Kin</b><br>In The Onyx Watchtower, available after conquering the Stronghold. Kill Skeletons in the marked area for 15 Personal Effects.</li>
+            <li data-id="side_quests_3_17" class="f_side_quest"><b>A Pound of Flesh</b><br>In The Onyx Watchtower, available after conquering the Stronghold. Head to the Ragged Encampment in the marked area and kill the bandits for the key. Enter Borza’s Hideout and kill Borza and Nizaar.</li>
+            <h4>Jakha Basin</h4>
+            <li data-id="side_quests_3_18" class="f_side_quest"><b>Sentimental Value</b><br>In Hidden Overlook, after progressing Act III. Head to the quest marker in Desolation’s Reach and search the marked areas, then kill Orsolya.</li>
+            <li data-id="side_quests_3_19" class="f_side_quest"><b>What Remains</b><br>In Hidden Overlook, after progressing Act III. Head to Farobru and speak to Yeshi. Head to the quest marker and kill Hungry Bloodhawk, then return.</li>
+            <h4>Chambatar Ridge</h4>
+            <li data-id="side_quests_3_20" class="f_side_quest"><b>Weight of Sin</b><br>In The Boiling Plains, available when first arriving. Head to the marked areas and search for the bracelets on charred remains.</li>
+            <li data-id="side_quests_3_21" class="f_side_quest"><b>Curious Curios</b><br>In The Boiling Plains, available when first arriving. Search pots in the marked area for the correct one, then speak to Rakhaan.</li>
+            <li data-id="side_quests_3_22" class="f_side_quest"><b>Hunting the Relic Hunter</b><br>In Fate’s Retreat, available after completing Curious Curios. Head to the quest marker in Foothills of Saraan and speak to Abaan, then slay the skeletons.</li>
+            <li data-id="side_quests_3_23" class="f_side_quest"><b>Treasure or Trash</b><br>In Fate’s Retreat, available after completing More Than Meets the Eye. Grab the ring, then kill demons in the marked area for demon essences.</li>
+            <li data-id="side_quests_3_24" class="f_side_quest"><b>In the Name of Love</b><br>In Fate’s Retreat, available after completing Act III. Enter Whispering Vault dungeon and search for the Cleaver.</li>
+            <h4>The Accursed Wastes</h4>
+            <li data-id="side_quests_3_25" class="f_side_quest"><b>More Than Meets the Eye</b><br>In Foothills of Saran, available after completing Hunting the Relic Hunter. Head to the quest marker and enter Saraan Caldera. Redirect the light beams, then head further in and kill Overseer Kafan.</li>
+            <h4>Untamed Scarps</h4>
+            <li data-id="side_quests_3_26" class="f_side_quest"><b>Keeping the Old Traditions</b><br>In Desolation’s Reach, available when first arriving. Head to the marked area and use the Yes gesture.</li>
+            <li data-id="side_quests_3_27" class="f_side_quest"><b>Augury of Bones</b><br>In Desolation’s Reach, available when first arriving. Collect 3 Bone Dust in the marked area by killing Skeletons.</li>
+            <li data-id="side_quests_3_28" class="f_side_quest"><b>Hubris Smiles Back</b><br>Automatically started after completing Augury of Bones. Speak to Ogai and enter Grinning One dungeon. Kill Fallen and collect 5 Baneful Oblations.</li>
+            <li data-id="side_quests_3_29" class="f_side_quest"><b>Salt Begets Salts</b><br>In Jirandai, available when first arriving. Head to the marked area and search for Tuji’s body, then return.</li>
+            <li data-id="side_quests_3_30" class="f_side_quest"><b>Blistered Heart</b><br>In Jirandai, available when first arriving. Head to the marked area and kill Spiders until the broodmother spawns, then kill her for the Spider Queen Heart.</li>
+            <li data-id="side_quests_3_31" class="f_side_quest"><b>Tarnished Amulet</b><br>Pick up Tarnished Amulet, which is dropped by Cannibals in Untamed Scarps. Return it to Yinsuk Shrine.</li>
+            <li data-id="side_quests_3_32" class="f_side_quest"><b>Culling of Flesh</b><br>In Crane Tribe Hutmoot, available when first arriving. Kill 50 Cannibals in the marked area.</li>
+            <li data-id="side_quests_3_33" class="f_side_quest"><b>Consumed by Pride</b><br>In Crane Tribe Hutmoot, available when first arriving. Go to the marked area and search for a Mutilated Barbarian corpse, then return.</li>
+            <li data-id="side_quests_3_34" class="f_side_quest"><b>Raising Spears</b><br>Started automatically after completing Consumed by Pride. Enter Champion’s Demise dungeon and collect 8 Blood-etched Spears.</li>
+            <li data-id="side_quests_3_35" class="f_side_quest"><b>Fury Against Fate</b><br>Started automatically after completing Raising Spears. Speak with Ealda at Crane Tribe Hutmoot, then enter Wasting Hollow and kill all cannibals.</li>
+            <li data-id="side_quests_3_36" class="f_side_quest"><b>Worthy of Arreat</b><br>In Crane Tribe Hutmoot, available after completing Fury Against Fate. Enter Ancient’s Lament and find the Ancient Crane Sword on a dead barbarian, then go to Ked Bardu.</li>
+            <li data-id="side_quests_3_37" class="f_side_quest"><b>Currencies From Afar</b><br>Pick up Bag of Old Coins, which is found on searchable corpses in Untamed Scarps. Bring it the Gesur in Jirandai.</li>
+            <h4>Qara Yisu</h4>
+            <li data-id="side_quests_3_38" class="f_side_quest"><b>Phases of the Moon</b><br>In Ruins of Qara-Yisu, available after conquering the Stronghold. Kill Khazra in the marked area to collect 25 Khazra Bones.</li>
+            <li data-id="side_quests_3_39" class="f_side_quest"><b>Blood and Sweat</b><br>In Ruins of Qara-Yisu, available after conquering the Stronghold. Search the marked area for a Crude Doll, then take it to Tuya.</li>
+          </ul>
+
+          <h3 id="Kehjistan"><a href="#Kehjistan_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-kehjistan-all-side-quest-locations/">Kehjistan </a> <span id="side_quests_totals_4"></span></h3>
+          <ul id="Kehjistan_col" class="collapse in">
+            <h4>Scouring Sands</h4>
+            <li data-id="side_quests_4_1" class="f_side_quest"><b>Traces of Iron</b><br>Inside Tarsarak, available when first arriving. Head to the Iron Wolves Encampment and speak to Asyfa.</li>
+            <li data-id="side_quests_4_2" class="f_side_quest"><b>Payment Past Due</b><br>Inside Tarsarak, available when first arriving. Head to the marked area and search for the Miner’s Lockbox, then return.</li>
+            <li data-id="side_quests_4_3" class="f_side_quest"><b>Shadow of Alcarnus</b><br>In Forlorn Badlands, available when first arriving. Kill 12 Fly Demons within the Forlorn Badlands.</li>
+            <li data-id="side_quests_4_4" class="f_side_quest"><b>Strayed from the Path</b><br>Inside Tarsarak, available after completing the Campaign. Head to the marked area and kill the Knights Penitent.</li>
+            <li data-id="side_quests_4_5" class="f_side_quest"><b>Ravenous Necrolyte’s Cache</b><br>Pick up Ravenous Necrolyte’s Cache, which drops from enemies within The Outer Gardens. Kill Cultists and Demons in the marked area to harvest death anima.</li>
+            <h4>Amber Sands</h4>
+            <li data-id="side_quests_4_6" class="f_side_quest"><b>Mirage</b><br>In Dunes of Despair, available when first arriving. Follow the mirage through the marked area and destroy the buried effigies, then kill Jazadar.</li>
+            <li data-id="side_quests_4_7" class="f_side_quest"><b>Desiccation</b><br>In Searing Expanse, available when first arriving. Give Naglaa a Healing Potion, then destroy 4 Fly Nests in the marked area. Return to Naglaa at Zakarum Temple.</li>
+            <li data-id="side_quests_4_8" class="f_side_quest"><b>The Pilgrim’s Footsteps</b><br>In Searing Expanse, available when first arriving. Head to the marked area at Zakarum Chapel and use the Follow gesture.</li>
+            <li data-id="side_quests_4_9" class="f_side_quest"><b>Butchers of the North</b><br>At Zakarum Chapel, available when first arriving. Kill 35 Cannibals in the marked area.</li>
+            <li data-id="side_quests_4_10" class="f_side_quest"><b>Symbol of Faith</b><br>At Zakarum Chapel, available when first arriving. Enter Tomb of the Saints dungeon and search for the Zakarum holy symbol, then kill the Graverobber.</li>
+            <li data-id="side_quests_4_11" class="f_side_quest"><b>Unsafe Travels</b><br>In Tar Pits, available when first arriving. Find a Ghost Palm within the marked area and return.</li>
+            <li data-id="side_quests_4_12" class="f_side_quest"><b>Road to Ruin</b><br>In Dunes of Despair, available after completing Unsafe Travels. Kill the attacking Fly Demons while following Mahjoob.</li>
+            <li data-id="side_quests_4_13" class="f_side_quest"><b>The Only Cure</b><br>Automatically started after completing Road to Ruin. Enter Mahjoob’s Safehouse and kill him.</li>
+            <h4>Ragged Coastline</h4>
+            <li data-id="side_quests_4_14" class="f_side_quest"><b>Strange Remedies</b><br>Inside Iron Wolves Encampment, available when first arriving. Kill Drowned in the marked areas to collect 12 Digested Gutweed.</li>
+            <li data-id="side_quests_4_15" class="f_side_quest"><b>A Wolf’s Honor</b><br>Inside Iron Wolves Encampment, available when first arriving. Enter Forgotten Ruins dungeon and retrieve Alim and Tala’s belongings.</li>
+            <li data-id="side_quests_4_16" class="f_side_quest"><b>Guardians of the Pit</b><br>Inside Iron Wolves Encampment, available when first arriving. Kill Skeletons in the marked area until the champion spawns, then kill him.</li>
+            <li data-id="side_quests_4_17" class="f_side_quest"><b>On the Hunt</b><br>Inside Iron Wolves Encampment, available when first arriving. Head to the marked area and search for Dawood, then kill Malik. Return to Haddad.</li>
+            <li data-id="side_quests_4_18" class="f_side_quest"><b>Seeking Refuge</b><br>In Scorched Gulch, available when first arriving. Head down and collect the supplies, then speak to Haddad at the encampment.</li>
+            <li data-id="side_quests_4_19" class="f_side_quest"><b>More Value Than Gold</b><br>Inside Iron Wolves Encampment, available after completing the previous Iron Wolves quests and leaving the area. Head to the quest marker, then kill the bandits and enter Tunnels Beneath The Oasis. Kill all 7 caged plague demons, then kill the Dahlgur Putrifier.</li>
+            <li data-id="side_quests_4_20" class="f_side_quest"><b>Head of the Snake</b><br>Automatically started after completing More Value Than Gold. Head to the quest marker, then find the pillar in the marked area and interact with the wall to enter Triune Hideout. Kill all Triune Cultists.</li>
+            <li data-id="side_quests_4_21" class="f_side_quest"><b>A Moment of Peace</b><br>Automatically started after completing Head of the Snake. Speak to Asa and Dawood.</li>
+            <li data-id="side_quests_4_22" class="f_side_quest"><b>Timely Correspondence</b><br>Pick up Waterstained Letter, found when searching objects in Ragged Coastline. Speak to Aih’Setal in Gea Kul.</li>
+            <li data-id="side_quests_4_23" class="f_side_quest"><b>Unusual Ore</b><br>Pick up Unusual Ore, dropped when searching ore veins within Ragged Coastline. Speak to Benamin in Iron Wolves Encampment.</li>
+            <li data-id="side_quests_4_24" class="f_side_quest"><b>Endless Fortune</b><br>Pick up Old Journal, dropped by killing a Treasure Goblin in Kehjistan. Speak to Ostaf in Gea Kul.</li>
+            <h4>Southern Expanse</h4>
+            <li data-id="side_quests_4_25" class="f_side_quest"><b>Final Straw</b><br>In Pale Sands, available when first arriving. Take the oats and search the marked area for Neema, then escort her back with the oats.</li>
+            <li data-id="side_quests_4_26" class="f_side_quest"><b>Deadly Trade</b><br>Inside Gea Kul, available when first arriving. Speak to Shahos, then kill Khazra in the marked area to collect 20 Khazra Glands.</li>
+            <li data-id="side_quests_4_27" class="f_side_quest"><b>Pinch of Poison</b><br>Inside Gea Kul, available when first arriving. Collect 15 Scorpion Venom Glands by killing Scorpions within Kehjistan.</li>
+            <li data-id="side_quests_4_28" class="f_side_quest"><b>The Speaking Stone</b><br>Inside Gea Kul, available when first arriving. Head to the marked area and search for the statue.</li>
+            <li data-id="side_quests_4_29" class="f_side_quest"><b>A Voice from the Past</b><br>In Central Plateau, available after completing The Speaking Stone. Enter Conclave dungeon and search for the Vizjerei Vessel, then return.</li>
+            <li data-id="side_quests_4_30" class="f_side_quest"><b>Izel of the Vizrjerei</b><br>Automatically started after completing A Voice from the Past. Head to the each of the marked areas and enter Vizjerei Athenaeum. Kill the enemies, then Izel.</li>
+            <li data-id="side_quests_4_31" class="f_side_quest"><b>Late Shipment</b><br>Pick up Battered Shipment, which drops from enemies in Southern Expanse. Take it to Aih’Setal.</li>
+            <li data-id="side_quests_4_32" class="f_side_quest"><b>Zakarum’s Plight</b><br>In Hakan’s Oasis, available when first arriving. Gather water and return it to Tameon.</li>
+            <li data-id="side_quests_4_33" class="f_side_quest"><b>When the Tide Comes In</b><br>In Shipwreck Cove, available when first arriving. Head to the marked area to find a sword, then continue and find all 3 family members.</li>
+            <li data-id="side_quests_4_34" class="f_side_quest"><b>Spotted Mushroom</b><br>Pick up Spotted Mushroom, which can be found when searching herbs throughout Kejhistan. Take it to Veroka in Kyovashad.</li>
+            <li data-id="side_quests_4_35" class="f_side_quest"><b>Sealed Khazra Offering</b><br>Pick up Sealed Khazra Offering, which drops from Khazra in Eastern Basin. Kill Khazra to harvest death anima.</li>
+            <h4>Caldeum</h4>
+            <li data-id="side_quests_4_36" class="f_side_quest"><b>In Desperate Times</b><br>In Imperial Library, available after completing the Campaign. Head to the marked area and use the Help gesture.</li>
+            <li data-id="side_quests_4_37" class="f_side_quest"><b>To Serve Again</b><br>Pick up Iron Wolf Armor, which is dropped by enemies in Abandoned Iron Wolves Garrison after completing the Campaign. Show it to Barez in Imperial Library.</li>
+            <li data-id="side_quests_4_38" class="f_side_quest"><b>The Weapon of a Wolf</b><br>Pick up Iron Wolf Sword, which is dropped by enemies in Residential District after completing the Campaign. Show it to Barez in Imperial Library.</li>
+            <li data-id="side_quests_4_39" class="f_side_quest"><b>An Errant Flock</b><br>In Southern Expanse, available after completing the Campaign. Follow the Traveler, speaking to him and killing the enemies at each stop.</li>
+            <li data-id="side_quests_4_40" class="f_side_quest"><b>Acts of Atonement</b><br>Started automatically after completing An Errant Flock. Speak to 5 people in Gea Kul and enter Commandeered House, then kill the Knights Penitent.</li>
+            <li data-id="side_quests_4_41" class="f_side_quest"><b>Justice Delayed</b><br>Started automatically after completing Acts of Atonement. Head to the marked area and kill the Knights Penitent, then speak to Edgar.</li>
+            <li data-id="side_quests_4_42" class="f_side_quest"><b>An Unlawful Order</b><br>Started automatically after completing Justice Delayed. Head to the marked area and speak to Edgar, then head to Osric’s hideout and kill the Knights Penitent. Enter Osric’s Garrison and kill him.</li>
+            <li data-id="side_quests_4_43" class="f_side_quest"><b>Remnants</b><br>Inside the Prison of Caldeum dungeon after completing the Campaign, pick up Crumpled Note which can drop from searching Tortured Prisoners. Search the marked area in Caldeum and enter Hideout Entrance, then kill the Knights Penintent.</li>
+            <li data-id="side_quests_4_44" class="f_side_quest"><b>The Way of the Three</b><br>This side quest is very different to others, as to even start it you will need to gesture in front of three statues of the Prime Evils spread around Kehjistan. Head down to the Gates of Hell to find an Unknown Altar with 3 plaques that give you hints about where to find the statues. Head to the below locations to find the statues and use the Cheer gesture to ignite some flames.<br>Diablo – Shrine of Terror (in Southern Expanse)<br>Mephisto – Outside Denshar (north of Fields of Hatred)<br>Baal – Altar of Ruin: Ritual Site (inside the boss room of Altar of Ruin, requires conquering the Stronghold first)<br>After cheering in front of the three statues, return to the Unknown Altar in Gates of Hell. Enter the Mysterious Gateway and kill the waves of demons before destroying the pillar.</li>
+          </ul>
+
+          <h3 id="Hawezar"><a href="#Hawezar_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-hawezar-all-side-quest-locations/">Hawezar </a> <span id="side_quests_totals_5"></span></h3>
+          <ul id="Hawezar_col" class="collapse in">
+            <h4>Umir Plateau</h4>
+            <li data-id="side_quests_5_1" class="f_side_quest"><b>Remnants of Faith</b><br>Inside Zarbinzet, available when first arriving. Head to the quest marker, then follow the marked areas to Maugan’s Folly and enter Maugan’s Works dungeon. Search for the armour.</li>
+            <li data-id="side_quests_5_2" class="f_side_quest"><b>The Heretic</b><br>Inside Zarbinzet, available when first arriving. Head to the marked area and kill the demons. Gather flowers in the marked area, then return to Zarbinzet. Enter the Forgotten Cave and kill the demons.</li>
+            <li data-id="side_quests_5_3" class="f_side_quest"><b>A Price to Pay</b><br>Started automatically after completing The Heretic. Speak to Vera and Suzana, then search homes in the marked area for the book. Head to and enter Blind Burrows, and collect 8 Spider Venom. Bring it to Aneta, then speak to Gulyas</li>
+            <li data-id="side_quests_5_4" class="f_side_quest"><b>Poisoned Hearts</b><br>Started automatically after completing A Price to Pay. Head to the marked area and extinguish the braziers at Gulyas’ Hovel. Gather 4 Rotten Livers in the marked area, then enter the Hidden Glade and kill enemies to fill the Blood Altar, then return to Gulyas’ Hovel.</li>
+            <li data-id="side_quests_5_5" class="f_side_quest"><b>Coiled Grasp</b><br>Inside Zarbinzet, available after progressing Act V. Head to the quest marker and inspect the corpse.</li>
+            <li data-id="side_quests_5_6" class="f_side_quest"><b>To Walk a Dark Path</b><br>Inside Zarbinzet, available after completing Act V. Head to the Decaying Farmstead and kill the enemies for a Lockbox Key, then open the Forgotten Lockbox. Head to the quest marker and fight and question the Pilgrims.</li>
+            <li data-id="side_quests_5_7" class="f_side_quest"><b>At Any Cost</b><br>Started automatically after completing To Walk a Dark Path. Head to the marked area and enter Strange Refuge, then kill the wildlife and investigate. Speak to and kill Acolyte of Rathma for his head, then complete the ritual.</li>
+            <li data-id="side_quests_5_8" class="f_side_quest"><b>Turbulent Waters</b><br>Started automatically after completing At Any Cost. Head to Backwater and speak to the locals and buy the Cerrigar Mead. Search the marked area for Sev and speak to her.</li>
+            <li data-id="side_quests_5_9" class="f_side_quest"><b>By Three They Come</b><br>Started automatically after completing Turbulent Waters. Speak to Sev and enter Halls of Dark Portent. Break open the door and kill the Blood Echo, then return to Father Dymus.</li>
+            <li data-id="side_quests_5_10" class="f_side_quest"><b>Overstepping the Mark</b><br>Inside Zarbinzet, available after completing Drink to the Past and Good Riddance in Rotspill Delta. Buy the Thieves Guild Emblem from Mislan and bring it to Lyndon.</li>
+            <h4>Fethis Wetlands</h4>
+            <li data-id="side_quests_5_11" class="f_side_quest"><b>Flesh and Blood</b><br>In Light’s Wane, available when first arriving. Head to the marked area and search the farmhouse, then go to the river to find the windchime. Hang the windchimes and kill the enemies, then return to the farmhouse.</li>
+            <h4>Blightmarsh</h4>
+            <li data-id="side_quests_5_12" class="f_side_quest"><b>The Swamp’s Protection</b><br>In Timue’s Hovel, after progressing Act V. Head to the marked areas and search for Duraya, Baridan and Raldin. Afterwards head to the marked area and kill the bandits, then return to Timue.</li>
+            <li data-id="side_quests_5_13" class="f_side_quest"><b>Venom of the Nangari</b><br>Pick up Curious Venom, which is dropped by Nangari enemies in Blightmarsh. Bring it to Timue.</li>
+            <h4>Toxic Fens</h4>
+            <li data-id="side_quests_5_14" class="f_side_quest"><b>One Little Red Sprig</b><br>Pick up Budding Crimson Thorn, which can be found when searching herbs in Hawezar after meeting Timue. Bring it to her.</li>
+            <li data-id="side_quests_5_15" class="f_side_quest"><b>Hungering Necrolyte’s Cache</b><br>Pick up Hungering Necrolyte’s Cache, which can be found from searchable corpses in Toxic Fens. Kill Nangari in the marked area to harvest death anima.</li>
+            <h4>Forsaken Coast</h4>
+            <li data-id="side_quests_5_16" class="f_side_quest"><b>Necrotic Research</b><br>In Gulyas’ Hovel, after completing Poisoned Hearts. Head to the marked area and kill enemies for 1 Necrotic Flesh and 5 Snake Venom.</li>
+            <li data-id="side_quests_5_17" class="f_side_quest"><b>Bad Blood</b><br>In Gulyas’ Hovel, after completing Necrotic Research. Find the bandit camp in the marked area and add the potion to the pot, then do the same for the cultist camp.</li>
+            <li data-id="side_quests_5_18" class="f_side_quest"><b>Timeworn Effigy</b><br>Pick up Timeworn Timue Doll, which can be found by searching containers in Hawezar after meeting Timue. Bring it to her.</li>
+            <li data-id="side_quests_5_19" class="f_side_quest"><b>A Debt Repaid</b><br>Inside Backwater, available when first arriving. Head to the marked area and search for Flinn, then kill him.</li>
+            <li data-id="side_quests_5_20" class="f_side_quest"><b>Dead in the Water</b><br>Inside Backwater, available when first arriving. Head to the marked area and kill Drowned to collect 10 Salvaged Resources and help Tomaj burn 3 Fresh Corpses.</li>
+            <li data-id="side_quests_5_21" class="f_side_quest"><b>Brought to Heel</b><br>Inside Backwater, available when first arriving. Head to the marked area and search for a red mushroom.</li>
+            <li data-id="side_quests_5_22" class="f_side_quest"><b>The Greater Good</b><br>Inside Backwater, available after completing one of the previous three Backwater quests. Head to the marked area and search for the stolen supplies, then kill the bandits.</li>
+            <li data-id="side_quests_5_23" class="f_side_quest"><b>Discretionary Spending</b><br>Inside Backwater, available after completing Act V and completing The Greater Good. Follow the quest markers outside to collect the supplies and meet the contacts, then kill the Backwater Traitors.</li>
+            <li data-id="side_quests_5_24" class="f_side_quest"><b>Bait the Trap</b><br>Inside Backwater, available after completing Discretionary Spending. Follow the quest markers to the 3 ambush locations and kill the Backwater Traitors.</li>
+            <li data-id="side_quests_5_25" class="f_side_quest"><b>Dead to Rights</b><br>Started automatically after completing Bait the Trap. Enter Backwater Storage Cellar and kill the traitor.</li>
+            <h4>The Writhing Mire</h4>
+            <li data-id="side_quests_5_26" class="f_side_quest"><b>Tangled Memories</b><br>In Immurement of Thorns, available after visiting The Tree of Whispers during Act V. Find a puffball reed in the marked area, then head to the quest markers in Backwater.</li>
+            <li data-id="side_quests_5_27" class="f_side_quest"><b>Growing Reminders</b><br>In Immurement of Thorns, available after completing Tangled Memories. Speak to Kres, then head to Timue. Kill Nangari Spitters in the marked area for 10 Marsh Snake Venom, then get the salve from Timue and take it to Kres.</li>
+            <li data-id="side_quests_5_28" class="f_side_quest"><b>Unearthed Regrets</b><br>In Immurement of Thorns, available after completing Growing Reminders. Head to the marked area to find the Exsanguinated Remains, then burn them near Backwater.</li>
+            <li data-id="side_quests_5_29" class="f_side_quest"><b>Heart’s Burden</b><br>Pick up Rusted Dagger, which can be found on the Child’s Corpse in The Swamp of Vanished Souls. The blue ghost that appears around the swamp will point in the direction of it. Go to Wejinhani and speak to Damen.</li>
+            <h4>Rotspill Delta</h4>
+            <li data-id="side_quests_5_30" class="f_side_quest"><b>Traveler’s Superstition</b><br>In Bosun’s Woe, available after progressing Act V. Use the Hello gesture in front of the statue.</li>
+            <li data-id="side_quests_5_31" class="f_side_quest"><b>Ire of the Witch</b><br>At Zurke’s Hut, available after progressing Act V. Head to the Sodden Graveyard and search for Samil, then return to Zurke.</li>
+            <li data-id="side_quests_5_32" class="f_side_quest"><b>Perceived Threat</b><br>Started automatically after completing Ire of the Witch. Head to the marked area and kill the Experimental Corpse, then return.</li>
+            <li data-id="side_quests_5_33" class="f_side_quest"><b>Song of Rot</b><br>Started automatically after completing Perceived Threat. Head to the marked area and kill the Blood Fungus Host, then head to Zurke and defend him.</li>
+            <li data-id="side_quests_5_34" class="f_side_quest"><b>Drink to the Past</b><br>Pick up Kingsport Ale, which can be found in a chest outside Belfry Zakara dungeon after completing Dead to Rights for Lyndon. Bring it to Lyndon.</li>
+            <li data-id="side_quests_5_35" class="f_side_quest"><b>Good Riddance</b><br>Pick up Forgotten Crossbow, which can be found on searchable corpses along the coast of Rotspill Delta after completing Dead to Rights for Lyndon. Bring it to Lyndon.</li>
+            <h4>Dismal Foothills</h4>
+            <li data-id="side_quests_5_36" class="f_side_quest"><b>Gift of the Swamp</b><br>In Path of Desperation, available when first arriving. Head to the quest marker and kill the swarm.</li>
+            <li data-id="side_quests_5_37" class="f_side_quest"><b>Fungal Remedies</b><br>Automatically started after completing Gift of the Swamp. Head to Pilgrim’s Cave and kill enemies to collect 10 Gano Fungus, then return and administer the medication.</li>
+            <li data-id="side_quests_5_38" class="f_side_quest"><b>Heart of Mold</b><br>Automatically started after completing Fungal Remedies. Take the head and go to the marked area and speak with Zurke. Kill Nuroth the Vile Fang, then return to Zurke and Yolanda.</li>
+            <li data-id="side_quests_5_39" class="f_side_quest"><b>Desperate Remedies</b><br>Inside Wejinhani, available when first arriving. Speak with the Elders, then search the pyres in the marked areas. Enter Light’s Refuge dungeon and kill Aldara for her amulet, then return.</li>
+            <li data-id="side_quests_5_40" class="f_side_quest"><b>What Can’t Be Cured</b><br>In Dismal Foothills, available when first arriving. Head to the quest markers on the way to Wejinhani.</li>
+            <li data-id="side_quests_5_41" class="f_side_quest"><b>A Question of Self</b><br>In Ruined Tower, available after completing Act V. Search the tower, then head to and enter Hungering Swamp. Kill the Shades of Grief, then leave and talk to her.</li>
+            <li data-id="side_quests_5_42" class="f_side_quest"><b>Past Regrets</b><br>Started automatically after completing A Question of Self. Head to the quest marker to collect Taissa’s amulet, then meet her at the Tree of Whispers. Kill Nangari Oracles within the marked area for 4 Oracle Eyes, then return and enter Eldritch Conclave for the ritual.</li>
+            <li data-id="side_quests_5_43" class="f_side_quest"><b>A Series of Steps</b><br>Started automatically after completing Past Regrets. Speak to Taissa in her tower, then watch the memories and kill the enemies as you progress through the areas. Kill the Whisper of Andariel.</li>
+            <li data-id="side_quests_5_44" class="f_side_quest"><b>Closing the Book</b><br>Inside Wejinhani, available after conquering Eriman’s Pyre stronghold. Head to the quest marker and speak to Elder Akos, then search the area for 4 Ledger Pages.</li>
+            <li data-id="side_quests_5_45" class="f_side_quest"><b>Glittering Abundance</b><br>Pick up Gem-Laden Geode, which can be found when searching Ore Veins in Dismal Foothills. Speak to Tungal in Ked Bardu, then Mislan in Zarbinzet.</li>
+            <li data-id="side_quests_5_46" class="f_side_quest"><b>Chained Zakarum Repository</b><br>Pick up Chained Zakarum Repisitory, which is dropped from Fallen enemies in Dismal Foothills. Kill Fallen in the marked area to harvest lingering essence.</li>
+            <h4>Ruins of Rakhat Keep</h4>
+            <li data-id="side_quests_5_47" class="f_side_quest"><b>Lost Legacy</b><br>In the Ruins, available after progressing Act V. Enter the Defiled Halls and kill the 3 corrupted Paladin spirits to collect their swords. Continue further in and perform the ritual, then kill Carthas.</li>
+            <h4>Vyeresz</h4>
+            <li data-id="side_quests_5_48" class="f_side_quest"><b>Left Behind</b><br>In Vyeresz, available after conquering the Stronghold. Enter Shadowed Plunge dungeon and search for Derin.</li>
+            <li data-id="side_quests_5_49" class="f_side_quest"><b>Lost Cause</b><br>In Vyeresz, available after conquering the Stronghold. Kill Cultists in the marked area and collect 10 Zakarum Prayer Amulets.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- SIDE QUESTS END -->
+
+      <!-- SIDE DUNGEONS START -->
+      <div class="tab-pane" id="tabSideDungeons">
+        <h2>Side Dungeons <span id="side_dungeons_overall_total"></span></h2>
+        <ul class="table_of_contents">
+          <li><a href="#Fractured_Peaks">Fractured Peaks</a> <span id="side_dungeons_nav_totals_1"></li>
+          <li><a href="#Scosglen">Scosglen</a> <span id="side_dungeons_nav_totals_2"></li>
+          <li><a href="#Dry_Steppes">Dry Steppes</a> <span id="side_dungeons_nav_totals_3"></li>
+          <li><a href="#Kehjistan">Kehjistan</a> <span id="side_dungeons_nav_totals_4"></li>
+          <li><a href="#Hawezar">Hawezar</a> <span id="side_dungeons_nav_totals_5"></li>
+        </ul>
+
+        <div class="form-group">
+          <input type="search" id="side_dungeons_search" class="form-control" placeholder="Start typing to filter results..." />
+        </div>
+
+        <div id="side_dungeons_list">
+
+          <h3 id="Fractured_Peaks"><a href="#Fractured_Peaks_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-fractured-peaks-all-side-dungeon-locations/">Fractured Peaks </a> <span id="side_dungeons_totals_1"></span></h3>
+          <ul id="Fractured_Peaks_col" class="collapse in">
+            <h4>Desolate Highlands</h4>
+            <li data-id="side_dungeons_1_1" class="f_side_dungeon"><b>Lost Archives</b><br>Aspect of the Protector</li>
+            <li data-id="side_dungeons_1_2" class="f_side_dungeon"><b>Defiled Catacomb</b><br>Aspect of Tempering Blows (Barbarian)</li>
+            <li data-id="side_dungeons_1_3" class="f_side_dungeon"><b>Tormented Ruins</b><br>Aspect of the Unsatiated (Druid)</li>
+            <h4>Dobrev Taiga</h4>
+            <li data-id="side_dungeons_1_4" class="f_side_dungeon"><b>Light’s Watch</b><br>Aspect of Conflagration (Sorcerer)</li>
+            <li data-id="side_dungeons_1_5" class="f_side_dungeon"><b>Maulwood</b><br>Slaking Aspect (Barbarian)</li>
+            <h4>Gale Valley</h4>
+            <li data-id="side_dungeons_1_6" class="f_side_dungeon"><b>Dead Man’s Dredge</b><br>Aspect of Piercing Cold (Sorcerer)</li>
+            <h4>Frigid Expanse</h4>
+            <li data-id="side_dungeons_1_7" class="f_side_dungeon"><b>Immortal Emantion</b><br>Mangled Aspect (Druid)</li>
+            <li data-id="side_dungeons_1_8" class="f_side_dungeon"><b>Hallowed Ossuary</b><br>Aspect of Unrelenting Fury (Barbarian)</li>
+            <li data-id="side_dungeons_1_9" class="f_side_dungeon"><b>Black Asylum</b><br>Aspect of Torment (Necromancer)</li>
+            <li data-id="side_dungeons_1_10" class="f_side_dungeon"><b>Forsaken Quarry</b><br>Aspect of Encircling Blades (Rogue)</li>
+            <h4>Malnok</h4>
+            <li data-id="side_dungeons_1_11" class="f_side_dungeon"><b>Anica’s Claim</b><br>Stormclaw’s Aspect (Druid)</li>
+            <li data-id="side_dungeons_1_12" class="f_side_dungeon"><b>Rimescar Cavern</b><br>Aspect of Plunging Darkness (Necromancer)</li>
+            <h4>Seat of the Heavens</h4>
+            <li data-id="side_dungeons_1_13" class="f_side_dungeon"><b>Sanguine Chapel</b><br>Energizing Aspect (Rogue)</li>
+            <li data-id="side_dungeons_1_14" class="f_side_dungeon"><b>Zenith</b><br>Recharging Aspect (Sorcerer)</li>
+            <li data-id="side_dungeons_1_15" class="f_side_dungeon"><b>Hoarfrost Demise</b><br>Blood-bathed Aspect (Necromancer)</li>
+            <h4>Kor Valar</h4>
+            <li data-id="side_dungeons_1_16" class="f_side_dungeon"><b>Kor Valar Ramparts</b><br>Blast-Trapper’s Aspect (Rogue)</li>
+            <h4>Sarkova Pass</h4>
+            <li data-id="side_dungeons_1_17" class="f_side_dungeon"><b>Kor Dragan Barracks</b><br>Aspect of Anemia (Barbarian)</li>
+            <li data-id="side_dungeons_1_18" class="f_side_dungeon"><b>Forbidden City</b><br>Nighthowler’s Aspect (Druid)</li>
+            <li data-id="side_dungeons_1_19" class="f_side_dungeon"><b>Mercy’s Reach</b><br>Blood Seeker’s Aspect (Necromancer)</li>
+            <h4>The Pallid Glade</h4>
+            <li data-id="side_dungeons_1_20" class="f_side_dungeon"><b>Caldera Gate</b><br>Eluding Aspect</li>
+            <li data-id="side_dungeons_1_21" class="f_side_dungeon"><b>Nostrava Deepwood</b><br>Flesh-Rending Aspect (Necromancer)</li>
+            <li data-id="side_dungeons_1_22" class="f_side_dungeon"><b>Derelict Lodge</b><br>Aspect of Explosive Verve (Rogue)</li>
+            <h4>Nostrava</h4>
+            <li data-id="side_dungeons_1_23" class="f_side_dungeon"><b>Cultist Refuge</b><br>Flamewalker’s Aspect (Sorcerer)</li>
+          </ul>
+
+          <h3 id="Scosglen"><a href="#Scosglen_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-scosglen-peaks-all-side-dungeon-locations/">Scosglen </a> <span id="side_dungeons_totals_2"></span></h3>
+          <ul id="Scosglen_col" class="collapse in">
+            <h4>Westering Lowlands</h4>
+            <li data-id="side_dungeons_2_1" class="f_side_dungeon"><b>Broken Bulwark</b><br>Ghostwalker Aspect</li>
+            <li data-id="side_dungeons_2_2" class="f_side_dungeon"><b>Demon’s Wake</b><br>Aspect of Uncanny Treachery (Rogue)</li>
+            <h4>Tur Dulra</h4>
+            <li data-id="side_dungeons_2_3" class="f_side_dungeon"><b>Underroot</b><br>Aspect of the Expectant</li>
+            <li data-id="side_dungeons_2_4" class="f_side_dungeon"><b>Wretched Delve</b><br>Aspect of Static Cling (Sorcerer)</li>
+            <h4>Northshore</h4>
+            <li data-id="side_dungeons_2_5" class="f_side_dungeon"><b>Howling Warren</b><br>Aspect of Arrow Storms (Rogue)</li>
+            <li data-id="side_dungeons_2_6" class="f_side_dungeon"><b>Calibel’s Mine</b><br>Aspect of the Relentless Armsmaster (Barbarian)</li>
+            <li data-id="side_dungeons_2_7" class="f_side_dungeon"><b>Sunken Ruins</b><br>Aspect of Ancestral Force (Barbarian)</li>
+            <h4>Hope’s Light</h4>
+            <li data-id="side_dungeons_2_8" class="f_side_dungeon"><b>Flooded Depths</b><br>Aspect of Empowering Reaper (Necromancer)</li>
+            <h4>Wailing Hills</h4>
+            <li data-id="side_dungeons_2_9" class="f_side_dungeon"><b>Vault of The Forsaken</b><br>Requiem Aspect (Necromancer)</li>
+            <li data-id="side_dungeons_2_10" class="f_side_dungeon"><b>Penitent Cairns</b><br>Death Wish Aspect (Barbarian)</li>
+            <li data-id="side_dungeons_2_11" class="f_side_dungeon"><b>Raethwind Wilds</b><br>Aspect of Inner Calm</li>
+            <h4>The Emerald Chase</h4>
+            <li data-id="side_dungeons_2_12" class="f_side_dungeon"><b>Stockades</b><br>Crashstone Aspect (Druid)</li>
+            <h4>The Downs</h4>
+            <li data-id="side_dungeons_2_13" class="f_side_dungeon"><b>Sarat’s Lair</b><br>Snowveiled Aspect (Sorcerer)</li>
+            <li data-id="side_dungeons_2_14" class="f_side_dungeon"><b>Oldstones</b><br>Edgemaster’s Aspect</li>
+            <h4>Strand</h4>
+            <li data-id="side_dungeons_2_15" class="f_side_dungeon"><b>Domhainne Tunnels</b><br>Aspect of Efficiency (Sorcerer)</li>
+            <li data-id="side_dungeons_2_16" class="f_side_dungeon"><b>Luban’s Rest</b><br>Cheat’s Aspect (Rogue)</li>
+            <li data-id="side_dungeons_2_17" class="f_side_dungeon"><b>Garan Hold</b><br>Aspect of the Dire Whirlwind (Barbarian)</li>
+            <li data-id="side_dungeons_2_18" class="f_side_dungeon"><b>Mariner’s Refuge</b><br>Overcharged Aspect (Druid)</li>
+            <h4>Moordaine Lodge</h4>
+            <li data-id="side_dungeons_2_19" class="f_side_dungeon"><b>Twisted Hollow</b><br>Shadowslicer Aspect (Rogue)</li>
+            <li data-id="side_dungeons_2_20" class="f_side_dungeon"><b>Ferals’ Den</b><br>Aspect of Quicksand (Druid)</li>
+            <h4>The Shrouded Moors</h4>
+            <li data-id="side_dungeons_2_21" class="f_side_dungeon"><b>Jalal’s Vigil</b><br>Bladedancer’s Aspect (Rogue)</li>
+            <li data-id="side_dungeons_2_22" class="f_side_dungeon"><b>Aldurwood</b><br>Aspect of Reanimation (Necromancer)</li>
+            <h4>Highland Wilds</h4>
+            <li data-id="side_dungeons_2_23" class="f_side_dungeon"><b>Maddux Watch</b><br>Charged Aspect (Sorcerer)</li>
+            <li data-id="side_dungeons_2_24" class="f_side_dungeon"><b>Hive</b><br>Aspect of Swelling Curse (Necromancer)</li>
+            <li data-id="side_dungeons_2_25" class="f_side_dungeon"><b>Whispering Pines</b><br>Ballstic Aspect (Druid)</li>
+          </ul>
+
+          <h3 id="Dry_Steppes"><a href="#Dry_Steppes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-dry-steppes-peaks-all-side-dungeon-locations/">Dry Steppes </a> <span id="side_dungeons_totals_3"></span></h3>
+          <ul id="Dry_Steppes_col" class="collapse in">
+            <h4>Kotama Grasslands</h4>
+            <li data-id="side_dungeons_3_1" class="f_side_dungeon"><b>Seaside Descent</b><br>Aspect of Retaliation (Druid)</li>
+            <h4>Tuusma Rift</h4>
+            <li data-id="side_dungeons_3_2" class="f_side_dungeon"><b>Dark Ravine</b><br>Aspect of Might</li>
+            <h4>Khargai Crags</h4>
+            <li data-id="side_dungeons_3_3" class="f_side_dungeon"><b>Path of the Blind</b><br>Aspect of Bursting Bones (Necromancer)</li>
+            <li data-id="side_dungeons_3_4" class="f_side_dungeon"><b>Mournfield</b><br>Aspect of Berserk Ripping (Barbarian)</li>
+            <li data-id="side_dungeons_3_5" class="f_side_dungeon"><b>Grinning Labyrinth</b><br>Aspect of the Calm Breeze (Druid)</li>
+            <h4>The Onyx Watchtower</h4>
+            <li data-id="side_dungeons_3_6" class="f_side_dungeon"><b>Onyx Hold</b><br>Storm Swell Aspect (Sorcerer)</li>
+            <h4>Dindai Flats</h4>
+            <li data-id="side_dungeons_3_7" class="f_side_dungeon"><b>Forgotten Depths</b><br>Aspect of Biting Cold (Sorcerer)</li>
+            <h4>The Scarred Coast</h4>
+            <li data-id="side_dungeons_3_8" class="f_side_dungeon"><b>Carrion Fields</b><br>Aspect of the Iron Warrior (Barbarian)</li>
+            <li data-id="side_dungeons_3_9" class="f_side_dungeon"><b>Komdor Temple</b><br>Aspect of the Bounding Conduit (Sorcerer)</li>
+            <h4>Untamed Scarps</h4>
+            <li data-id="side_dungeons_3_10" class="f_side_dungeon"><b>Charnel House</b><br>Aspect of Perpetual Stomping (Barbarian)</li>
+            <li data-id="side_dungeons_3_11" class="f_side_dungeon"><b>Sealed Archives</b><br>Aspect of Mending Stone (Druid)</li>
+            <li data-id="side_dungeons_3_12" class="f_side_dungeon"><b>Champion’s Demise</b><br>Aspect of the Umbral</li>
+            <li data-id="side_dungeons_3_13" class="f_side_dungeon"><b>Bloodsoaked Crag</b><br>Shepherd’s Aspect (Druid)</li>
+            <li data-id="side_dungeons_3_14" class="f_side_dungeon"><b>Ancient’s Lament</b><br>Aspect of Volatile Shadows (Rogue)</li>
+            <h4>Jakha Basin</h4>
+            <li data-id="side_dungeons_3_15" class="f_side_dungeon"><b>Buried Halls</b><br>Rapid Aspect</li>
+            <li data-id="side_dungeons_3_16" class="f_side_dungeon"><b>Guulrahn Canals</b><br>Trickster’s Aspect (Rogue)</li>
+            <li data-id="side_dungeons_3_17" class="f_side_dungeon"><b>Guulrahn Slums</b><br>Splintering Aspect (Necromancer)</li>
+            <h4>Qara Yisu</h4>
+            <li data-id="side_dungeons_3_18" class="f_side_dungeon"><b>Shifting City</b><br>Ravenous Aspect (Rogue)</li>
+            <li data-id="side_dungeons_3_19" class="f_side_dungeon"><b>Pallid Delve</b><br>Elementalist’s Aspect (Sorcerer)</li>
+            <h4>The Accursed Wastes</h4>
+            <li data-id="side_dungeons_3_20" class="f_side_dungeon"><b>Betrayer’s Row</b><br>Aspect of Potent Blood (Necromancer)</li>
+            <h4>Chambatar Ridge</h4>
+            <li data-id="side_dungeons_3_21" class="f_side_dungeon"><b>Whispering Vault</b><br>Aspect of Unstable Imbuements (Rogue)</li>
+          </ul>
+
+          <h3 id="Kehjistan"><a href="#Kehjistan_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-kehjistan-peaks-all-side-dungeon-locations/">Kehjistan </a> <span id="side_dungeons_totals_4"></span></h3>
+          <ul id="Kehjistan_col" class="collapse in">
+            <h4>Scouring Sands</h4>
+            <li data-id="side_dungeons_4_1" class="f_side_dungeon"><b>Fading Echo</b><br>Skinwalker’s Aspect (Druid)</li>
+            <li data-id="side_dungeons_4_2" class="f_side_dungeon"><b>Halls of the Damned</b><br>Aspect of Disobedience</li>
+            <li data-id="side_dungeons_4_3" class="f_side_dungeon"><b>Abandoned Mineworks</b><br>Aspect of Retribution</li>
+            <li data-id="side_dungeons_4_4" class="f_side_dungeon"><b>Sirocco Caverns</b><br>Aspect of Echoing Fury (Barbarian)</li>
+            <h4>Amber Sands</h4>
+            <li data-id="side_dungeons_4_5" class="f_side_dungeon"><b>Inferno</b><br>Vengeful Aspect (Rogue)</li>
+            <li data-id="side_dungeons_4_6" class="f_side_dungeon"><b>Collapsed Vault</b><br>Aspect of Cyclonic Force (Druid)</li>
+            <li data-id="side_dungeons_4_7" class="f_side_dungeon"><b>Shivta Ruins</b><br>Wind Striker Aspect</li>
+            <li data-id="side_dungeons_4_8" class="f_side_dungeon"><b>Sunken Library</b><br>Aspect of Control (Sorcerer)</li>
+            <li data-id="side_dungeons_4_9" class="f_side_dungeon"><b>Tomb of the Saints</b><br>Incendiary Aspect (Sorcerer)</li>
+            <h4>Altar of Ruin</h4>
+            <li data-id="side_dungeons_4_10" class="f_side_dungeon"><b>Sepulcher of the Forsworn</b><br>Hulking Aspect (Necromancer)</li>
+            <h4>Caldeum</h4>
+            <li data-id="side_dungeons_4_11" class="f_side_dungeon"><b>Yshari Sanctum</b><br>Needleflare Aspect</li>
+            <li data-id="side_dungeons_4_12" class="f_side_dungeon"><b>Crusaders’ Cathedral</b><br>Stormshifter’s Aspect (Druid)</li>
+            <li data-id="side_dungeons_4_13" class="f_side_dungeon"><b>Renegade’s Retreat</b><br>Aspect of Corruption (Rogue)</li>
+            <li data-id="side_dungeons_4_14" class="f_side_dungeon"><b>Prison of Caldeum</b><br>Opportunist’s Aspect (Rogue)</li>
+            <li data-id="side_dungeons_4_15" class="f_side_dungeon"><b>Deserted Underpass</b><br>Torturous Aspect (Necromancer)</li>
+            <h4>Omath’s Redoubt</h4>
+            <li data-id="side_dungeons_4_16" class="f_side_dungeon"><b>Crumbling Hekma</b><br>Aspect of Splintering Energy (Sorcerer)</li>
+            <h4>Southern Expanse</h4>
+            <li data-id="side_dungeons_4_17" class="f_side_dungeon"><b>Hakan’s Refuge</b><br>Relentless Berserker’s Aspect (Barbarian)</li>
+            <li data-id="side_dungeons_4_18" class="f_side_dungeon"><b>Conclave</b><br>Aspect of the Changeling’s Debt (Druid)</li>
+            <h4>Ragged Coastline</h4>
+            <li data-id="side_dungeons_4_19" class="f_side_dungeon"><b>Putrid Aquifer</b><br>Aspect of the Unwavering (Sorcerer)</li>
+            <li data-id="side_dungeons_4_20" class="f_side_dungeon"><b>Corrupted Grotto</b><br>Aspect of Grasping Veins (Necromancer)</li>
+            <li data-id="side_dungeons_4_21" class="f_side_dungeon"><b>Uldur’s Cave</b><br>Aspect of the Damned (Necromancer)</li>
+            <li data-id="side_dungeons_4_22" class="f_side_dungeon"><b>Forgotten Ruins</b><br>Iron Blood Aspect (Barbarian)</li>
+            <li data-id="side_dungeons_4_23" class="f_side_dungeon"><b>Heretics Asylum</b><br>Veteran Brawler’s Aspect (Barbarian)</li>
+          </ul>
+
+          <h3 id="Hawezar"><a href="#Hawezar_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://www.powerpyx.com/diablo-4-hawezar-peaks-all-side-dungeon-locations/">Hawezar </a> <span id="side_dungeons_totals_5"></span></h3>
+          <ul id="Hawezar_col" class="collapse in">
+            <h4>Umir Plateau</h4>
+            <li data-id="side_dungeons_5_1" class="f_side_dungeon"><b>Earthen Wound</b><br>Aspect of Singed Extremities (Sorcerer)</li>
+            <li data-id="side_dungeons_5_2" class="f_side_dungeon"><b>Lost Keep</b><br>Aspect of the Deflecting Barrier</li>
+            <li data-id="side_dungeons_5_3" class="f_side_dungeon"><b>Endless Gates</b><br>Aspect of the Rampaging Werebeast (Druid)</li>
+            <li data-id="side_dungeons_5_4" class="f_side_dungeon"><b>Bastion of Faith</b><br>Trickshot Aspect (Rogue)</li>
+            <h4>Fethis Wetlands</h4>
+            <li data-id="side_dungeons_5_5" class="f_side_dungeon"><b>Blind Burrows</b><br>Aspect of the Tempest (Druid)</li>
+            <li data-id="side_dungeons_5_6" class="f_side_dungeon"><b>Maugan’s Works</b><br>Earthstriker’s Aspect</li>
+            <h4>Toxic Fens</h4>
+            <li data-id="side_dungeons_5_7" class="f_side_dungeon"><b>Ruins of Eridu</b><br>Sacrificial Aspect (Necromancer)</li>
+            <li data-id="side_dungeons_5_8" class="f_side_dungeon"><b>Leviathan’s Maw</b><br>Aspect of Siphoned Victuals (Rogue)</li>
+            <li data-id="side_dungeons_5_9" class="f_side_dungeon"><b>Ghoa Ruins</b><br>Enshrouding Aspect (Rogue)</li>
+            <h4>Vyeresz</h4>
+            <li data-id="side_dungeons_5_10" class="f_side_dungeon"><b>Shadowed Plunge</b><br>Aspect of Branching Volleys (Rogue)</li>
+            <h4>Blightmarsh</h4>
+            <li data-id="side_dungeons_5_11" class="f_side_dungeon"><b>Witchwater</b><br>Prodigy’s Aspect (Sorcerer)</li>
+            <li data-id="side_dungeons_5_12" class="f_side_dungeon"><b>Serpent’s Lair</b><br>Aspect of Three Curses (Sorcerer)</li>
+            <h4>Forsaken Coast</h4>
+            <li data-id="side_dungeons_5_13" class="f_side_dungeon"><b>Faceless Shrine</b><br>Unyielding Commander’s Aspect (Necromancer)</li>
+            <h4>Rotspill Delta</h4>
+            <li data-id="side_dungeons_5_14" class="f_side_dungeon"><b>Belfry Zakara</b><br>Aspect of the Ursine Horror (Druid)</li>
+            <li data-id="side_dungeons_5_15" class="f_side_dungeon"><b>Haunted Refuge</b><br>Brawler’s Aspect (Barbarian)</li>
+            <li data-id="side_dungeons_5_16" class="f_side_dungeon"><b>Ancient Reservoir</b><br>Aspect of Ancestral Echoes (Barbarian)</li>
+            <h4>The Writhing Mire</h4>
+            <li data-id="side_dungeons_5_17" class="f_side_dungeon"><b>Fetid Mausoleum</b><br>Snowguard’s Aspect (Sorcerer)</li>
+            <h4>Eriman’s Pyre</h4>
+            <li data-id="side_dungeons_5_18" class="f_side_dungeon"><b>Oblivion</b><br>Aspect of Shared Misery</li>
+            <h4>Dismal Foothills</h4>
+            <li data-id="side_dungeons_5_19" class="f_side_dungeon"><b>Heathen’s Keep</b><br>Aspect of Numbing Wrath (Barbarian)</li>
+            <li data-id="side_dungeons_5_20" class="f_side_dungeon"><b>Light’s Refuge</b><br>Aspect of Bul-Kathos (Barbarian)</li>
+            <h4>Ruins of Rakhat Keep</h4>
+            <li data-id="side_dungeons_5_21" class="f_side_dungeon"><b>Iron Hold</b><br>Fastblood Aspect (Necromancer)</li>
+            <li data-id="side_dungeons_5_22" class="f_side_dungeon"><b>Akkhan’s Grasp</b><br>Blighted Aspect (Necromancer)</li>
+            <li data-id="side_dungeons_5_23" class="f_side_dungeon"><b>Steadfast Barracks</b><br>Vigorous Aspect</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tabFAQ">      
+        <h2>FAQ</h2>
+
+        <p>The foundation of this guide was based on <a href="https://github.com/ZKjellberg">Zachary Kjellberg</a>'s <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">Dark Souls 3 Cheat Sheet</a> source code and <a href="https://www.powerpyx.com/diablo-4-all-collectible-locations-100-completion/">PowerPyx's Diablo IV Collectible Locations Guide</a>.</p>
+        <p>This guide has evolved thanks to the many <a href="https://github.com/raymondhytang/diablo-4-checklist/graphs/contributors">GitHub contributors</a> with many great suggestions, fixes and improvements!</p>
+
+        <h3>I have feedback, how can I contribute?</h3>
+        <p>You can visit the <a href="https://github.com/raymondhytang/diablo-4-checklist">GitHub repository</a> and <a href="https://github.com/raymondhytang/diablo-4-checklist/issues">report Issues</a> or create a fork and submit a Pull Request.</p>
+
+        <h3>Is this a guide?</h3>
+        <p>Nope, not really. This is a set of checklists and information that you can use while playing Diablo IV to make sure you don't miss a side quest.</p>
+
+        <h3>Can I use this for multiple characters?</h3>
+        <p>Yup, use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
+
+        <h3>How does the checklist status get saved?</h3>
+        <p>The checklist is saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
+      </div>
+
+      <div class="tab-pane" id="tabOptions">
+        <h2>Options</h2>
+
+        <!-- Theme Selection -->
+        <div class="row">
+          <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Theme selection:</h4></div>
+          <div class="col col-xs-12 col-sm-8 col-md-6"><select class="form-control" id="themes"><!-- Gets filled by jQuery. --></select></div>
+        </div>
+        <!-- Profile Selection -->
+        <div class="row">
+          <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Profile management:</h4></div>
+          <div class="col col-xs-12 col-sm-8 col-md-6">
+            <form class="form-inline input-group pull-right">
+              <select class="form-control" id="profiles"></select>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="profileAdd">Add</button>
+                <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
+              </span>
+            </form>
+          </div>
+        </div>
+        <!-- Import/Export -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-6"><h4>Data import/export:</h4></div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <form class="form-inline">
+              <span class="btn-group pull-left">
+                <button class="btn btn-default" type="button" id="profileImport">Import file</button>
+                <button class="btn btn-default" type="button" id="profileExport">Export file</button>
+              </span>
+              <span class="btn-group pull-right">
+                <button class="btn btn-default" type="button" id="profileImportText">Import textbox</button>
+                <button class="btn btn-default" type="button" id="profileExportText">Export clipboard</button>
+              </span>
+            </form>
+          </div>
+          <div class="col col-xs-12">
+            <textarea id="profileText" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div id="profileModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3 id="profileModalTitle" class="modal-title">Profile</h3>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="profileModalName">Name</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" id="profileModalName" placeholder="Enter profile name">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" id="profileModalClose" class="btn btn-default" data-dismiss="modal">Close</a>
+              <a href="#" id="profileModalAdd" class="btn btn-primary" data-dismiss="modal">Add</a>
+              <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+              <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+    <!-- tab-content -->
+  </div>
+  <!-- container -->
+
+  <div class="hiddenfile">
+    <input name="upload" type="file" id="fileInput" />
+  </div>
+
+  <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script>
+  <script src="js/jquery.highlight.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
